@@ -7,6 +7,3 @@ population: population.c
 
 scarbble: scarbble.c
 	$(CC) $(CFLAGS) scarbble scarbble.c $(LDLIBS)
-
-sort: ./sort/sort.c
-	$(CC) $(CFLAGS) sort ./sort/sort.c $(LDLIBS)
