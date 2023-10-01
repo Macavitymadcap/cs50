@@ -1,0 +1,57 @@
+sort1 uses: Selection
+
+How do you know?: IN all cases it is the slowest.
+
+random 50000:
+    real    0m12.241s
+    user    0m11.341s
+    sys     0m0.195s
+
+reversed 50000:
+    real    0m12.341s
+    user    0m11.565s
+    sys     0m0.124s
+
+sorted 50000:
+    real    0m0.524s
+    user    0m0.026s
+    sys     0m0.209s
+
+sort2 uses: Merge
+
+How do you know?: In all cases it is the fastest.
+
+random 50000:
+    real    0m0.590s
+    user    0m0.089s
+    sys     0m0.182s
+
+reversed 50000:
+    real    0m0.568s
+    user    0m0.060s
+    sys     0m0.147s
+
+sorted 50000:
+    real    0m0.889s
+    user    0m0.063s
+    sys     0m0.222s
+
+sort3 uses: Bubble
+
+How do you know?: In all cases it is inbetween.
+
+random 50000:
+    real    0m5.326s
+    user    0m4.818s
+    sys     0m0.157s
+
+reversed 50000:
+    real    0m5.537s
+    user    0m4.958s
+    sys     0m0.284s
+
+sorted 50000:
+    real    0m5.622s
+    user    0m4.801s
+    sys     0m0.151s
+

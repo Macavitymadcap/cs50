@@ -1,0 +1,6 @@
+cc=gcc
+LDLIBS=-lcs50
+CFLAGS=-o
+
+[file]: [file].c
+	$(CC) $(CFLAGS) [file] [file].c $(LDLIBS)
