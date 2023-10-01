@@ -5,5 +5,5 @@ CFLAGS=-o
 population: population.c
 	$(CC) $(CFLAGS) population population.c $(LDLIBS)
 
-scarbble: scarbble.c
-	$(CC) $(CFLAGS) scarbble scarbble.c $(LDLIBS)
+scrabbe: scrabbe.c
+	$(CC) $(CFLAGS) scrabbe scrabbe.c $(LDLIBS)
