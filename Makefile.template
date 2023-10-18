@@ -1,4 +1,4 @@
-cc=gcc
+CC=gcc
 LDLIBS=-lcs50
 CFLAGS=-o
 
