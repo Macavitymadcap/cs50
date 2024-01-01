@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
     return 0;
 }
 
-// Determine whether buffer of bytes is the begnning of a JPEG
+// Determine whether buffer of bytes is the beginning of a JPEG
 bool isStartOfJpeg(BYTE buffer[BLOCK_SIZE])
 {
     return buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0;
