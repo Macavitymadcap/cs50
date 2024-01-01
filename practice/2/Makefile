@@ -11,3 +11,7 @@ no-vowels: no-vowels.c
 password: password.c
 	$(CC) $(CFLAGS) password password.c $(LDLIBS)
 
+.PHONY: clean
+
+clean:
+	rm -f *.o $(objects) hours no-vowels password

@@ -10,3 +10,8 @@ half: half.c
 
 prime: prime.c
 	$(CC) $(CFLAGS) prime prime.c $(LDLIBS)
+
+.PHONY: clean
+
+clean:
+	rm -f *.o $(objects) debug half prime

@@ -53,6 +53,7 @@ int main(int argc, char *argv[])
         return 4;
     }
 
+    // Flip the image
     bi.biHeight = abs(bi.biHeight);
     
     // Write outfile's BITMAPFILEHEADER

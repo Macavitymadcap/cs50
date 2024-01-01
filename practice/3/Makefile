@@ -13,3 +13,8 @@ max: max.c
 
 snackbar: snackbar.c
 	$(CC) $(CFLAGS) snackbar snackbar.c $(LDLIBS)
+
+.PHONY: clean
+
+clean:
+	rm -f *.o $(objects) qtoi temps mac snackbar

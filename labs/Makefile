@@ -5,5 +5,10 @@ CFLAGS=-o
 population: population.c
 	$(CC) $(CFLAGS) population population.c $(LDLIBS)
 
-scrabbe: scrabbe.c
-	$(CC) $(CFLAGS) scrabbe scrabbe.c $(LDLIBS)
+scrabble: scrabble.c
+	$(CC) $(CFLAGS) scrabble scrabble.c $(LDLIBS)
+
+.PHONY: clean
+
+clean:
+	rm -f *.o $(objects) population scrabble

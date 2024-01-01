@@ -4,3 +4,8 @@ CFLAGS=-o
 
 [file]: [file].c
 	$(CC) $(CFLAGS) [file] [file].c $(LDLIBS)
+
+.PHONY: clean
+
+clean:
+	rm -f *.o $(objects) [file]
